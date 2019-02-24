@@ -1,5 +1,3 @@
-package array;
-
 /**
  * O(1)的移除固定元素，输出最后剩余几个--数组
  * Given nums = [3,2,2,3], val = 3,
@@ -8,17 +6,17 @@ package array;
  */
 public class Pro_027 {
     public int removeElement(int[] nums, int val) {
-        if(nums.length==0)
+        if (nums.length == 0)
             return 0;
         int res = 0;
-        for(int i = 0;i<nums.length-res;i++){
-            if(nums[i]==val){
+        for (int i = 0; i < nums.length - res; i++) {
+            if (nums[i] == val) {
                 // 换到后边
                 res++;
-                nums[i] = nums[nums.length-res];
+                nums[i] = nums[nums.length - res];
                 i--;
             }
         }
-        return nums.length-res;
+        return nums.length - res;
     }
 }

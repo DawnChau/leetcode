@@ -1,12 +1,10 @@
-package dp;
-
 /**
  * 最小代价爬楼梯--动态规划
  * Input: cost = [10, 15, 20]
  * Output: 15
  * Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
- *
- *
+ * <p>
+ * <p>
  * 我自己做的
  * dp[i] 指的是一定走i，所以要加上cost[i]
  */
