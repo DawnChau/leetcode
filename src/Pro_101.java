@@ -17,11 +17,4 @@ public class Pro_101 {
         // 这两个值的左->左应当和右->右相等。左->右应该和右->左相等
         return isSymmetric(left.left,right.right) && isSymmetric(right.left,left.right);
     }
-
-    public static void main(String[] args) {
-        Long a = 3L;
-        Integer b = 2;
-        Integer c = 1;
-        System.out.println(a==(b+c));
-    }
 }

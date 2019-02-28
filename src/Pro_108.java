@@ -1,5 +1,5 @@
 /**
- * 将有序数组转换成儿茶搜索树
+ * 将有序数组转换成二叉搜索树
  */
 public class Pro_108 {
     public TreeNode sortedArrayToBST(int[] nums) {
