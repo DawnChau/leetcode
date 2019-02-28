@@ -1,5 +1,8 @@
 import java.util.Stack;
 
+/**
+ * 记录最小值的栈
+ */
 public class Pro_155 {
 
     private Stack<Integer> stack;
