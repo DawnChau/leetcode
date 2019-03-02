@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * 根据按键求组合
+ */
 public class Pro_017 {
     private static HashMap<Character,String> map = new HashMap<>();
     private static List<String> list = new ArrayList<>();
