@@ -1,3 +1,6 @@
+/**
+ * 最长公共前缀
+ */
 public class Pro_014 {
     public String longestCommonPrefix(String[] strs) {
         if(strs.length==0)

@@ -1,3 +1,6 @@
+/**
+ * 寻找丢失的数
+ */
 public class Pro_268 {
     public int missingNumber(int[] nums) {
         int res = nums.length;

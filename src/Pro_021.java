@@ -1,5 +1,8 @@
 import java.awt.*;
 
+/**
+ * 合并两个链表
+ */
 public class Pro_021 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null)

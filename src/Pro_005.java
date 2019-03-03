@@ -1,5 +1,5 @@
 /**
- *
+ * 求最长回文子串
  */
 public class Pro_005 {
     private static int maxLength;

@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * FizzBuzz
+ */
 public class Pro_412 {
     public List<String> fizzBuzz(int n) {
         List<String> res = new ArrayList<>();
