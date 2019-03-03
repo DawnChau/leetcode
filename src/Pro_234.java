@@ -3,26 +3,26 @@
  */
 public class Pro_234 {
     public boolean isPalindrome(ListNode head) {
-        if(head == null || head.next ==null)
+        if (head == null || head.next == null)
             return true;
 
         ListNode pSlow = head;
         ListNode pFast = head;
         ListNode second = null;
 
-        while(pFast!=null && pFast.next!=null){
+        while (pFast != null && pFast.next != null) {
             pFast = pFast.next.next;
             pSlow = pSlow.next;
         }
 
         // 奇数
-        if(pFast!=null){
+        if (pFast != null) {
             second = reverseList(pSlow.next);
-        }else{
+        } else {
             second = reverseList(pSlow);
         }
-        while(second!=null){
-            if(head.val!=second.val)
+        while (second != null) {
+            if (head.val != second.val)
                 return false;
             second = second.next;
             head = head.next;
@@ -30,8 +30,8 @@ public class Pro_234 {
         return true;
     }
 
-    private ListNode reverseList(ListNode head){
-        if(head==null || head.next==null)
+    private ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null)
             return head;
         ListNode second = head.next;
         ListNode ans = reverseList(second);

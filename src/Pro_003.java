@@ -10,14 +10,14 @@ public class Pro_003 {
         int end = 0;
         int res = 0;
         HashSet<Character> set = new HashSet<>();
-        while(start<s.length() && end < s.length()){
-            if(set.contains(s.charAt(end))){
+        while (start < s.length() && end < s.length()) {
+            if (set.contains(s.charAt(end))) {
                 // 窗口前边后移
                 set.remove(s.charAt(start++));
-            }else{
+            } else {
                 // 加入，并且后移
                 set.add(s.charAt(end++));
-                res = Math.max(res,end-start);
+                res = Math.max(res, end - start);
             }
         }
         return res;

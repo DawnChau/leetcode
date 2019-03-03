@@ -13,8 +13,8 @@ public class Pro_007 {
             res = res * 10 + val;
             x /= 10;
         }
-        if(res>Integer.MAX_VALUE || -1L*res<Integer.MIN_VALUE)
+        if (res > Integer.MAX_VALUE || -1L * res < Integer.MIN_VALUE)
             return 0;
-        return isNeg ? -1 * (int)res : (int)res;
+        return isNeg ? -1 * (int) res : (int) res;
     }
 }

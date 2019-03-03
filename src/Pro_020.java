@@ -19,7 +19,7 @@ public class Pro_020 {
                     break;
                 default:
                     // 当没有压入或者上一个压入的不对，则为错
-                    if(stack.isEmpty() || stack.pop()!=c)
+                    if (stack.isEmpty() || stack.pop() != c)
                         return false;
             }
         }
