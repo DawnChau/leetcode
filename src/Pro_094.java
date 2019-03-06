@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -10,12 +9,12 @@ public class Pro_094 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        if(root==null)
+        if (root == null)
             return res;
         TreeNode cur = root;
-        while(cur!=null|| !stack.isEmpty()){
+        while (cur != null || !stack.isEmpty()) {
             // 向着左边压入栈
-            while(cur!=null){
+            while (cur != null) {
                 stack.push(cur);
                 cur = cur.left;
             }

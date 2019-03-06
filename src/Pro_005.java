@@ -6,6 +6,7 @@ public class Pro_005 {
     private static int start;
 
     public static String longestPalindrome(String s) {
+        // 长度为1也是回文的
         if (s.length() == 1 || s.length() == 0)
             return s;
         // 默认最长回文串的长度是1
