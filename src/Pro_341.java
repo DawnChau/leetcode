@@ -20,15 +20,15 @@ public class Pro_341 implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        while(nestedList!=null && nestedList.size()>0){
+        while (nestedList != null && nestedList.size() > 0) {
             // 取出第一个数，返回
             NestedInteger tempInt = nestedList.remove(0);
-            if(tempInt.isInteger()){
+            if (tempInt.isInteger()) {
                 data = tempInt.getInteger();
                 return true;
-            }else{
+            } else {
                 // 把list全部变成整形，添加到nestedList中
-                nestedList.addAll(0,tempInt.getList());
+                nestedList.addAll(0, tempInt.getList());
             }
         }
         return false;

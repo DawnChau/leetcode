@@ -11,17 +11,17 @@ public class Pro_378 {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                return o2-o1;
+                return o2 - o1;
             }
         });
 
-        for(int i = 0;i<matrix.length;i++){
-            for(int j = 0;j<matrix[0].length;j++){
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 // 剪枝
-                if((i+1)*(j+1)>k)
+                if ((i + 1) * (j + 1) > k)
                     break;
                 maxHeap.add(matrix[i][j]);
-                if(maxHeap.size()>k){
+                if (maxHeap.size() > k) {
                     maxHeap.poll();
                 }
             }
