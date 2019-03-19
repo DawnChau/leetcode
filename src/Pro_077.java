@@ -10,20 +10,20 @@ public class Pro_077 {
 
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new ArrayList<>();
-        if(n <=0 || k<=0 || k>n){
+        if (n <= 0 || k <= 0 || k > n) {
             return res;
         }
 
         List<Integer> c = new ArrayList<>();
-        generate(n,k,1,c,res);
+        generate(n, k, 1, c, res);
         return res;
     }
 
-    private void generate(int n, int k, int start, List<Integer> c,List<List<Integer>> res) {
-        if(c.size() == k){
+    private void generate(int n, int k, int start, List<Integer> c, List<List<Integer>> res) {
+        if (c.size() == k) {
             // ArrayList的拷贝
             List<Integer> temp = Arrays.asList(new Integer[c.size()]);
-            Collections.copy(temp,c);
+            Collections.copy(temp, c);
             res.add(temp);
             return;
         }
@@ -31,11 +31,11 @@ public class Pro_077 {
         // 剪枝
         // 还有 k - c.size 个空位
         // i 最多为 n-(k-c.size)+1
-        for(int i = start;i<=n-(k-c.size())+1;i++){
+        for (int i = start; i <= n - (k - c.size()) + 1; i++) {
             c.add(i);
-            generate(n,k,i+1,c,res);
+            generate(n, k, i + 1, c, res);
             // 回溯
-            c.remove((Integer)i);
+            c.remove((Integer) i);
         }
     }
 
