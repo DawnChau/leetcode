@@ -18,10 +18,10 @@ public class Pro_130 {
 
     public void solve(char[][] board) {
         m = board.length;
-        if(m == 0)
-            return ;
+        if (m == 0)
+            return;
         n = board[0].length;
-        if ( n == 0)
+        if (n == 0)
             return;
 
         boolean[][] visited = new boolean[m][n];

@@ -24,13 +24,14 @@ public class Pro_131 {
                 list.add(str);
                 dfs(s.substring(i), list);
                 // 回溯
-                list.remove(list.size()-1);
+                list.remove(list.size() - 1);
             }
         }
     }
 
     /**
      * 判断是否回文
+     *
      * @param str
      * @return
      */
