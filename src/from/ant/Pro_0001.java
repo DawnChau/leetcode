@@ -7,7 +7,7 @@ import java.util.Map;
  * map里存这个数，这个数的下标
  * 遍历一遍，如果存在和为target的数在map里，则返回两个索引
  */
-public class Pro_001 {
+public class Pro_0001 {
 
     public int[] twoSum(int[] nums, int target) {
 
@@ -28,6 +28,6 @@ public class Pro_001 {
 
     public static void main(String[] args) {
         int[] num = new int[]{3, 3};
-        System.out.println(MyUtils.printArray(new Pro_001().twoSum(num, 6)));
+        System.out.println(MyUtils.printArray(new Pro_0001().twoSum(num, 6)));
     }
 }

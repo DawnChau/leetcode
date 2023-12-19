@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 链表两数相加，需要注意进位
  */
-public class Pro_002 {
+public class Pro_0002 {
 
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
