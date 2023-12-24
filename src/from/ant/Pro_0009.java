@@ -2,6 +2,9 @@ package from.ant;
 
 import java.util.Objects;
 
+/**
+ * 判断数字是否是回文数
+ */
 public class Pro_0009 {
 
     public boolean isPalindrome(int x) {

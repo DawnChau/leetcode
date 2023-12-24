@@ -1,5 +1,8 @@
 /**
  * 逆转Integer
+ *
+ * 2023年12月24日评论：
+ * 假设环境不允许存储 64 位整数（有符号或无符号），不是说不能用long吗？这个不是很好的解法
  */
 public class Pro_007 {
     public int reverse(int x) {
