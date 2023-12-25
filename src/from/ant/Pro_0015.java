@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * 求三个数的和等于0
  * 可以参考下2019年写的，这个解法耗时和存储都很高，不是好解法
+ * 数组问题还是得优先考虑排序啊！！
  */
 public class Pro_0015 {
     public List<List<Integer>> threeSum(int[] nums) {
