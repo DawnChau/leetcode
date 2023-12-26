@@ -14,9 +14,10 @@ public class Pro_0001 {
         int[] res = new int[2];
         Map<Integer, Integer> data = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            if (data.containsKey(target - nums[i])) {
+            int another = target - nums[i];
+            if (data.containsKey(another)) {
                 res[0] = i;
-                res[1] = data.get(target - nums[i]);
+                res[1] = data.get(another);
                 return res;
             }
             data.put(nums[i], i);
