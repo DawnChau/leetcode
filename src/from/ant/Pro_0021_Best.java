@@ -3,7 +3,7 @@ package from.ant;
 /**
  * 合并两个有序链表
  */
-public class Pro_0021 {
+public class Pro_0021_Best {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         ListNode index1 = list1;
@@ -41,7 +41,7 @@ public class Pro_0021 {
     public static void main(String[] args) {
         int[] nums1 = new int[]{};
         int[] nums2 = new int[]{};
-        System.out.println(MyUtils.printListNode(new Pro_0021().mergeTwoLists(
+        System.out.println(MyUtils.printListNode(new Pro_0021_Best().mergeTwoLists(
                 MyUtils.buildListNodeFromArray(nums1), MyUtils.buildListNodeFromArray(nums2)
         )));
     }

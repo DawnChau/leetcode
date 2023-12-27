@@ -4,7 +4,7 @@ package from.ant;
  * 数组中原地删除某个数
  * 把删除的数放后边
  */
-public class Pro_0027 {
+public class Pro_0027_Best {
     public int removeElement(int[] nums, int val) {
         int index = nums.length - 1;
 
@@ -24,7 +24,7 @@ public class Pro_0027 {
 
     public static void main(String[] args) {
         int[] nums = new int[]{0};
-        int res = new Pro_0027().removeElement(nums, 0);
+        int res = new Pro_0027_Best().removeElement(nums, 0);
         System.out.println(res);
         System.out.println(MyUtils.printArray(nums));
     }
