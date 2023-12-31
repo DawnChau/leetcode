@@ -30,7 +30,7 @@ public class MyUtils {
         return sb.toString();
     }
 
-    public static ListNode buildListNodeFromArray(int[] nums){
+    public static ListNode buildListNodeFromArray(int[] nums) {
         ListNode head = new ListNode();
         ListNode index = head;
         for (int num : nums) {
@@ -39,5 +39,27 @@ public class MyUtils {
             index = temp;
         }
         return head.next;
+    }
+
+
+    public static TreeNode arrayToTree(int[] nums) {
+        if (nums.length == 0) {
+            return null;
+        }
+
+        return makeTree(nums, 0);
+    }
+
+    private static TreeNode makeTree(int[] nums, int index) {
+        TreeNode node = new TreeNode(nums[index]);
+        if (2 * index + 1 < nums.length) {
+            node.left = makeTree(nums, 2 * index + 1);
+        }
+
+        if (2 * index + 2 < nums.length) {
+            node.right = makeTree(nums, 2 * index + 2);
+        }
+
+        return node;
     }
 }

@@ -8,7 +8,7 @@ import java.util.Map;
  * 求不相连数组的最大值。
  * 分治+缓存优化中间结果
  */
-public class MianShi_1716 {
+public class MianShi_1716_Best {
 
     public int massage(int[] nums) {
         Map<Integer, Integer> cache = new HashMap<>();
@@ -51,6 +51,6 @@ public class MianShi_1716 {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 1, 4, 5, 3, 1, 1, 3};
-        System.out.println(new MianShi_1716().massage(nums));
+        System.out.println(new MianShi_1716_Best().massage(nums));
     }
 }
