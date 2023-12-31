@@ -38,3 +38,29 @@ public class Pro_0001_Best {
         System.out.println(MyUtils.printArray(new Pro_0001_Best().twoSum(num, 6)));
     }
 }
+
+class Pro_0001 {
+
+    public int[] twoSum(int[] nums, int target) {
+
+        int[] res = new int[2];
+        Map<Integer, Integer> data = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int another = target - nums[i];
+            if (data.containsKey(another)) {
+                res[0] = i;
+                res[1] = data.get(another);
+                return res;
+            }
+            data.put(nums[i], i);
+        }
+
+        return res;
+    }
+
+
+    public static void main(String[] args) {
+        int[] num = new int[]{3, 3};
+        System.out.println(MyUtils.printArray(new Pro_0001().twoSum(num, 6)));
+    }
+}
