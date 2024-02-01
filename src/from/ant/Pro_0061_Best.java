@@ -1,5 +1,8 @@
 package from.ant;
 
+/**
+ * 快慢指针要注意差距为0的情况
+ */
 public class Pro_0061_Best {
 
     public ListNode rotateRight(ListNode head, int k) {
