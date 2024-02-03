@@ -6,7 +6,7 @@ import java.util.TreeMap;
 // [1,16,49,16,121]  -> 1
 // [14,14,196,196,38416,38416] -> 5
 // [1,1,1,1,1,1,1,1,1,1,2,4,8,16,32,64,128,256,512,1024] -> 9
-public class Rank_0382_2 {
+public class Pro_3020 {
     public int maximumLength(int[] nums) {
         int maxSize = 0;
         TreeMap<Integer, Integer> map = new TreeMap<>();
@@ -63,6 +63,6 @@ public class Rank_0382_2 {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};
-        System.out.println(new Rank_0382_2().maximumLength(nums));
+        System.out.println(new Pro_3020().maximumLength(nums));
     }
 }

@@ -1,6 +1,6 @@
 package from.ant;
 
-public class Rank_0382_1 {
+public class Pro_3019 {
     public int countKeyChanges(String s) {
         if (s.length() == 0) {
             return 0;
@@ -18,6 +18,6 @@ public class Rank_0382_1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Rank_0382_1().countKeyChanges("AaAaAaaA"));
+        System.out.println(new Pro_3019().countKeyChanges("AaAaAaaA"));
     }
 }
