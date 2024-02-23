@@ -1,6 +1,6 @@
 package from.ant;
 
-public class Rank_d_0123_1 {
+public class Pro_3024_Best {
 
     public String triangleType(int[] nums) {
         int a = nums[0];

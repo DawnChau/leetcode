@@ -5,7 +5,7 @@ package from.ant;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Rank_d_0123_3 {
+public class Pro_3026 {
     public long maximumSubarraySum(int[] nums, int k) {
         long[] sum = new long[nums.length];
 
@@ -49,6 +49,6 @@ public class Rank_d_0123_3 {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1,3,8,9,5};
-        System.out.println(new Rank_d_0123_3().maximumSubarraySum(nums, 4));
+        System.out.println(new Pro_3026().maximumSubarraySum(nums, 4));
     }
 }
