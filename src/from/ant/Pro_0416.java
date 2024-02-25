@@ -19,6 +19,11 @@ public class Pro_0416 {
                 // 装与不装，哪个价值更大
                 dp[j] = Math.max(dp[j - nums[i]] + nums[i], dp[j]);
             }
+
+            // 剪枝优化
+            if (dp[target] == target) {
+                return true;
+            }
         }
         // 判断背包是否正好装满
         return dp[target] == target;
