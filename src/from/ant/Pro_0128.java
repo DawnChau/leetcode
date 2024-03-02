@@ -29,7 +29,7 @@ public class Pro_0128 {
             last = num;
         }
 
-        return Math.max(maxCount, count);;
+        return Math.max(maxCount, count);
     }
 
     public static void main(String[] args) {
