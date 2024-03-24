@@ -7,12 +7,12 @@ import java.util.List;
 public class Pro_0173 {
 }
 
-class BSTIterator {
+class BSTIterator1 {
 
     private List<Integer> list = new ArrayList<>();
     private Iterator<Integer> iterator;
 
-    public BSTIterator(TreeNode root) {
+    public BSTIterator1(TreeNode root) {
 
         inorderTraverse(root, list);
         iterator = list.iterator();
