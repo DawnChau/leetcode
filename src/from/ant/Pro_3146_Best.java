@@ -1,6 +1,6 @@
 package from.ant;
 
-public class Pro_3146 {
+public class Pro_3146_Best {
     public int findPermutationDifference(String s, String t) {
         int[] tIndex = new int[26];
         for (int i = 0; i < t.length(); i++) {
